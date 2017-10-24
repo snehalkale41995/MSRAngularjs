@@ -27,6 +27,7 @@ import {ActivityModule} from './activity/activity.module';
   ],
   
   imports: [
+<<<<<<< Updated upstream
     BrowserModule,
 
     FormsModule,
@@ -36,6 +37,14 @@ import {ActivityModule} from './activity/activity.module';
     MembersModule,
     ReportsModule,
     FundRaisingModule,
+=======
+
+    BrowserModule,
+    ActivityModule, 
+     MembersModule
+
+   
+>>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
