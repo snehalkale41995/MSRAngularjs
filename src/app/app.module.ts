@@ -1,20 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {GalleryModule} from './gallery/gallery.module';
 import { AppComponent } from './app.component';
-// import { ActivityComponent } from './activity/activity.component';
-import {ActivityModule } from './activity/activity.module';
+import { FormsModule } from '@angular/forms';
+import {RegistrationModule } from './registration/registration.module';
+import {GalleryModule} from './gallery/gallery.module';
+import {ActivityModule} from './activity/activity.module';
 
 @NgModule({
   declarations: [
     AppComponent
-    
-    
+   
+  
   ],
   imports: [
     BrowserModule,
-    ActivityModule,  
-    GalleryModule
+    FormsModule,
+    RegistrationModule,
+    GalleryModule,
+     ActivityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
