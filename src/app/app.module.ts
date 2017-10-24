@@ -24,8 +24,7 @@ import {ActivityModule} from './activity/activity.module';
     FormsModule,
     RegistrationModule,
     GalleryModule,
-     ActivityModule
-
+    ActivityModule,
     MembersModule,
     
 
