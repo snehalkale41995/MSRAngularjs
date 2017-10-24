@@ -28,6 +28,8 @@ import {ActivityModule} from './activity/activity.module';
   
   imports: [
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     BrowserModule,
 <<<<<<< Updated upstream
 
@@ -47,12 +49,24 @@ import {ActivityModule} from './activity/activity.module';
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+    BrowserModule,
+>>>>>>> Stashed changes
+=======
+    BrowserModule,
+>>>>>>> Stashed changes
     ActivityModule, 
      MembersModule
 
    
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
