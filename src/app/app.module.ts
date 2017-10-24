@@ -5,8 +5,10 @@ import {ReportsModule} from './reports/reports.module';
 
 
 
-import {MembersModule } from './members/members.module';
+
+//import {MembersModule } from './members/members.module';
 import {FundRaisingModule} from './fund-raising/fund-raising.module';
+import {MembersModule } from './members/members.module';
 import { FormsModule } from '@angular/forms';
 import {RegistrationModule } from './registration/registration.module';
 import {GalleryModule} from './gallery/gallery.module';
@@ -15,18 +17,25 @@ import {ActivityModule} from './activity/activity.module';
 
 @NgModule({
   declarations: [
+
     AppComponent,
 
+
+   
+
+    AppComponent
+  ],
+  
+  imports: [
     BrowserModule,
-    FundRaisingModule,
+
     FormsModule,
     RegistrationModule,
     GalleryModule,
     ActivityModule,
     MembersModule,
-    
-
-
+    ReportsModule,
+    FundRaisingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
