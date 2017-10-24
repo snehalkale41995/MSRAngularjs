@@ -1,0 +1,23 @@
+<h3> gallery form </h3>
+<div class="container">
+<form #videoform="ngForm" ngSubmit="onSubmit(videoform.value)">
+<div class="form-group">
+<label> Title  : </label>
+<input type="text" class="form-control">
+</div>
+
+<div class="form-group">
+<label> Description :</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="form-group">
+<label> Video Url :</label>
+<input type="text" class="form-control">
+</div>
+
+<button type="submit" class="btn btn-primary"> submit </button>
+
+</form>
+
+</div>
