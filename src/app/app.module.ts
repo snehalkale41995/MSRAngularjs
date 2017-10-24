@@ -27,8 +27,9 @@ import {ActivityModule} from './activity/activity.module';
   ],
   
   imports: [
-<<<<<<< Updated upstream
+
     BrowserModule,
+<<<<<<< Updated upstream
 
     FormsModule,
     RegistrationModule,
@@ -40,10 +41,22 @@ import {ActivityModule} from './activity/activity.module';
 =======
 
     BrowserModule,
+=======
+
+    BrowserModule,
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     ActivityModule, 
      MembersModule
 
    
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ],
   providers: [],
