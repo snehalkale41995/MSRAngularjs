@@ -4,11 +4,19 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
+<<<<<<< HEAD
+    "types": []
+=======
     "types": [],
     "experimentalDecorators": true
+>>>>>>> 412227b1cae194b32db6c7b8c02538a4b793423e
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 412227b1cae194b32db6c7b8c02538a4b793423e
