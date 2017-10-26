@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {ReportsModule} from './reports/reports.module';
 
-
+import {RouterModule} from '@angular/router';
+import {appRoutes} from './app.route';
 
 
 //import {MembersModule } from './members/members.module';
@@ -18,16 +19,16 @@ import {ActivityModule} from './activity/activity.module';
 @NgModule({
   declarations: [
 
-    AppComponent,
-
-
-   
-
     AppComponent
+
+
   ],
   
   imports: [
+
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
+
 
     FormsModule,
     RegistrationModule,
@@ -35,7 +36,11 @@ import {ActivityModule} from './activity/activity.module';
     ActivityModule,
     MembersModule,
     ReportsModule,
-    FundRaisingModule,
+    FundRaisingModule
+   
+
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]
