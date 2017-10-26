@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {ReportsModule} from './reports/reports.module';
 
-
+import {RouterModule} from '@angular/router';
+import {appRoutes} from './app.route';
 
 
 //import {MembersModule } from './members/members.module';
@@ -18,20 +19,16 @@ import {ActivityModule} from './activity/activity.module';
 @NgModule({
   declarations: [
 
-    AppComponent,
-
-
-   
-
     AppComponent
+
+
   ],
   
   imports: [
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
-<<<<<<< Updated upstream
+
 
     FormsModule,
     RegistrationModule,
@@ -39,39 +36,11 @@ import {ActivityModule} from './activity/activity.module';
     ActivityModule,
     MembersModule,
     ReportsModule,
-    FundRaisingModule,
-=======
-
-    BrowserModule,
-=======
-
-    BrowserModule,
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-    BrowserModule,
->>>>>>> Stashed changes
-=======
-    BrowserModule,
->>>>>>> Stashed changes
-    ActivityModule, 
-     MembersModule
+    FundRaisingModule
+   
 
    
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
   ],
   providers: [],
   bootstrap: [AppComponent]

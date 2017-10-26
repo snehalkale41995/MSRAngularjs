@@ -4,5 +4,7 @@ import { Injectable } from '@angular/core';
 export class MembersService {
 
   constructor() { }
-
+ getApp(): string { 
+      return "Hello world"; 
+   } 
 }
