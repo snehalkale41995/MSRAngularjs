@@ -1,13 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class ActivityService {
+export class ActivityOneService {
 
   constructor() { }
-  
-  getHello() : string {
-    return "hello world";
-  }
+ 
   getActivity(){
     return[
   {

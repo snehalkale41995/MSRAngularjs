@@ -1,16 +1,5 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
-export class ActivityService {
-
-  constructor() { }
-  
-  getHello() : string {
-    return "hello world";
-  }
-  getActivity(){
-    return[
-  {
+ [
+	{
 		"ActivityId" :"1",
 		"ActivityName":"Helping Hands",
 		"ActivityDate":"01/11/2016",
@@ -100,9 +89,6 @@ export class ActivityService {
 		"VolunteerNumber":"20",
 		"UserId":"09" 
 	}
-
 ]
-  }
 
-  
-}
+

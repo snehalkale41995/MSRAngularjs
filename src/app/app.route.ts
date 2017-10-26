@@ -6,11 +6,18 @@ import {MembersComponent} from './members/members.component';
 import {RegistrationComponent} from './registration/registration.component';
 import {ReportsComponent} from './reports/reports.component';
 import {MemberslistComponent} from './members/memberslist/memberslist.component';
+import {ActivityOneComponent} from './activity/activityOne/activityOne.component';
 
 export const appRoutes : Routes = [
 {
     path:'activity',
-    component:ActivityComponent
+    component:ActivityComponent,
+    children: [ 
+	    {
+		path: 'activityOne',
+		component:ActivityOneComponent,
+	    }
+    ]
 },
 
 {
@@ -25,7 +32,7 @@ export const appRoutes : Routes = [
 
 {
     path:'members',
-    component:MembersComponent,
+    component: MembersComponent,
     children: [ 
 	    {
 		path: 'memberslist',

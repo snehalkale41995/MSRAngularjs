@@ -3,15 +3,7 @@
     -webkit-box-sizing:  border-box;
     box-sizing:  border-box;
 }
-body  {
-    font-family:  'Nunito',  sans-serif;
-    color:  #384047;
-    background-image: url('http://designvkp.com/wp-content/uploads/2015/07/pattern.png');
-    background-position:  0px 0px;
-    background-repeat:  repeat;
-    animation:  animatedBackground 40s linear infinite;
-    opacity: 0.9;
-}
+
 @keyframes animatedBackground  {
     from  {
     background-position:  0 0;
@@ -79,18 +71,7 @@ fieldset  {
     margin-bottom:  30px;
     border:  none;
 }
-legend  {
-    font-size:  1.4em;
-    margin-bottom:  10px;
-}
-label  {
-    display:  block;
-    margin-bottom:  8px;
-}
-label.light  {
-    font-weight:  300;
-    display:  inline;
-}
+
 .number  {
     background-color:  #5fcf80;
     color:  #fff;
