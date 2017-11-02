@@ -1,0 +1,15 @@
+ 
+<a routerLink = "/"> < back </a>
+
+<h2>
+Add New Product
+</h2>
+
+<form id = "formNewProduct" name = "formNewProduct" #videoData = "ngForm" (ngSubmit) = "addnew(videoData.value)">
+  
+  
+  <label>TITLE : </label><input type = "text" name="title" id="title" placeholder="title" ngModel><br>
+  <label>DESCRIPTION: </label><input type = "text" name="year" id="year" placeholder="description" ngModel><br>
+  <label>VIDEO URL : </label><input type = "text" name="favorite" id="favorite" placeholder="video url" ngModel><br>
+  <input type="submit" value = "Add data">
+</form>

@@ -1,19 +1,21 @@
 import { Component, OnInit, OnDestroy} from '@angular/core';
 import { GalleryService } from './gallery.service';
+import {ActivatedRoute } from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
+  selector: 'add-comp',
+  templateUrl: './add.component.html',
   styleUrls: ['./gallery.component.css'],
    providers: [GalleryService]
 
 })
-export class GalleryComponent implements OnInit{
+export class addComponent implements OnInit{
  public videoobject : any;
-  constructor(private _GalleryService : GalleryService) { }
+  constructor(private _GalleryService : GalleryService,private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.getdata();
+    
     } 
 
    public getdata()
@@ -27,23 +29,18 @@ export class GalleryComponent implements OnInit{
    {
     this.videoobject =
     {
-      "title" : video.title ,
+      
+      "title" : video.title,
       "year" :video.year,
       "favorite" : video.favorite
     }
     
      this._GalleryService.addvideo(this.videoobject).then(() => {
-       this.getdata();
-        })
+        this.router.navigate(['/']);
+      })
+      
    }
 
 
-  public deletevideo(id)
-  {
-     if(confirm("Are you sure?")) {
-       this._GalleryService.deletevideo(id).then(() => {
-       this.getdata();
-        })
-     }
-  }
+  
 }

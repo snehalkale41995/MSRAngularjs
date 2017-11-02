@@ -1,0 +1,17 @@
+
+<a routerLink = "/"> < back </a>
+
+<h2>
+  Update Product
+</h2>
+
+<!-- <p *ngIf = "!exist">
+  Product doesn't exist
+</p> -->
+
+<form id = "formNewProduct" name = "formNewProduct" #videoData = "ngForm"  (ngSubmit) = "updateProduct(videoData.value)">
+  <label>Title: </label><input type = "text" name="title" id="title" placeholder="title" [(ngModel)] = "data.title" ngModel><br>
+  <label>description: </label><input type = "text" name="year" id="year" [(ngModel)] = "data.year" placeholder="description" ngModel><br>
+  <label>videourl: </label><input type = "text" name="favorite" id="favorite" [(ngModel)] = "data.favorite" placeholder="videourl" ngModel><br>
+  <input type="submit" value = "Update Product">
+</form>

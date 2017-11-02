@@ -7,7 +7,7 @@ import {RegistrationComponent} from './registration/registration.component';
 import {ReportsComponent} from './reports/reports.component';
 import {MemberslistComponent} from './members/memberslist/memberslist.component';
 import {ActivityOneComponent} from './activity/activityOne/activityOne.component';
-
+import { landingpageComponent } from './gallery/landingpage.component';
 export const appRoutes : Routes = [
 {
     path:'activity',
@@ -27,7 +27,13 @@ export const appRoutes : Routes = [
 
 {
     path:'gallery',
-    component:GalleryComponent
+    component:GalleryComponent,
+     children: [ 
+	    {
+		path: 'landing',
+		component:landingpageComponent,
+	    }
+    ]
 },
 
 {
